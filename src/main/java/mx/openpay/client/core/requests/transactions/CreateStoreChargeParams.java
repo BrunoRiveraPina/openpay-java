@@ -81,5 +81,12 @@ public class CreateStoreChargeParams extends RequestBuilder {
     public CreateCardChargeParams httpContext(final HttpContext httpContext) {
         return this.with("http_context", httpContext);
     }
+	
+    /**
+     * Sends currency information    
+     */
+    public CreateStoreChargeParams currency(final String currency) {
+    	return this.with("currency", currency);
+    }
 
 }
